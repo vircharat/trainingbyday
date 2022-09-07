@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shape</title>
+    <style> canvas{
+
+        
+        border: 2px solid rgb(204, 30, 30);
+       
+
+        margin: 100px;
+        display: block;
+    }</style>
+   
+</head>
+<body>
+   
+    <canvas id="can" width="1500" height="800"></canvas>
+    <script>
+     
+      var ctx=document.getElementById("can").getContext("2d");
+      ctx.beginPath();
+      ctx.fillStyle="orange"
+      ctx.fillRect(250,250,300,80);
+      ctx.closePath();
+      ctx.beginPath();
+      ctx.fillStyle="white"
+      ctx.fillRect(250,330,300,80);
+      ctx.closePath();
+      ctx.beginPath();
+      ctx.fillStyle="green"
+      ctx.fillRect(250,410,300,80);
+      ctx.closePath();
+      ctx.beginPath();
+      //ctx.fillStyle="white"
+      ctx.arc(250,250,40,0,360,true);
+      ctx.closePath();
+
+
+
+      setInterval(function(){
+        ctx.beginPath();
+        var boxx=Math.round(Math.random()*200);
+        var boxy=Math.round(Math.random()*100);
+        var cirrad=Math.round(Math.random()*50);
+        var red=Math.round(Math.random()*255);
+        var green=Math.round(Math.random()*255);
+        var blue=Math.round(Math.random()*255);
+        var a=Math.random();
+        
+       
+        //ctx.clearRect(0,0,500,500);
+        ctx.fillStyle="rgba("+red+","+green+","+blue+","+a+")";
+        ctx.font="bold 40px arial"
+        ctx.fillText("HAPPY INDEPENDENCE DAYS",100,200)
+        
+       // ctx.fillRect(boxx,boxy,boxw,boxw);
+       ctx.arc(boxx,boxy,cirrad,0,(Math.PI/180)*360,true);
+       ctx.fill();
+       ctx.closePath();
+
+        
+      },100)
+    </script>
+
+    
+</body>
+</html>

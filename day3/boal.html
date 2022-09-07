@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shape</title>
+    <style> canvas{
+
+        
+        border: 2px solid rgb(204, 30, 30);
+       
+
+        margin: 100px;
+        display: block;
+    }</style>
+   
+</head>
+<body>
+   
+    <canvas id="can" width="1500" height="800"></canvas>
+    <script>
+     
+      var ctx=document.getElementById("can").getContext("2d");
+      ctx.beginPath();
+      ctx.strokeStyle="blue";
+      //ctx.fillStyle="green";
+      
+      ctx.moveTo(500,500);
+      ctx.lineTo(1400,500);
+      ctx.lineTo(1300,650);
+      ctx.lineTo(600,650);
+      ctx.lineTo(500,500);
+      
+      //ctx.fill();
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.strokeStyle="blue";
+      //ctx.fillStyle="green";
+      
+      ctx.moveTo(500,500);
+      ctx.lineTo(600,500);
+      ctx.lineTo(700,300);
+      ctx.lineTo(1300,300);
+      ctx.lineTo(1400,500);
+      
+      
+      //ctx.fill();
+      ctx.stroke();
+      
+      ctx.beginPath();
+      ctx.strokeStyle="blue";
+      ctx.fillStyle="blue"
+      ctx.fillRect(700,350,80,50);
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.beginPath();
+      ctx.strokeStyle="blue";
+      ctx.fillStyle="blue"
+      ctx.fillRect(800,350,80,50);
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.beginPath();
+      ctx.strokeStyle="blue";
+      ctx.fillStyle="blue"
+      ctx.fillRect(900,350,80,50);
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.beginPath();
+      ctx.strokeStyle="blue";
+      ctx.fillStyle="blue"
+      ctx.fillRect(1000,350,80,50);
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.beginPath();
+      ctx.strokeStyle="blue";
+      ctx.fillStyle="blue"
+      ctx.fillRect(1100,350,80,50);
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.beginPath();
+      ctx.strokeStyle="blue";
+      ctx.fillStyle="blue"
+      ctx.fillRect(1200,350,80,50);
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.beginPath();
+      ctx.strokeStyle="blue";
+      ctx.fillStyle="blue"
+      ctx.fillRect(700,425,80,50);
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.beginPath();
+      ctx.strokeStyle="blue";
+      ctx.fillStyle="blue"
+      ctx.fillRect(800,425,80,50);
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.beginPath();
+      ctx.strokeStyle="blue";
+      ctx.fillStyle="blue"
+      ctx.fillRect(900,425,80,50);
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.beginPath();
+      ctx.strokeStyle="blue";
+      ctx.fillStyle="blue"
+      ctx.fillRect(1000,425,80,50);
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.beginPath();
+      ctx.strokeStyle="blue";
+      ctx.fillStyle="blue"
+      ctx.fillRect(1100,425,80,50);
+      ctx.stroke();
+      ctx.closePath();
+      
+      ctx.beginPath();
+      ctx.strokeStyle="blue";
+      ctx.fillStyle="blue"
+      ctx.fillRect(1200,425,80,50);
+      ctx.stroke();
+      ctx.closePath();
+      ctx.font="bold 40px arial"
+      ctx.fillText("voyager",1000,600);
+      /*setInterval(function(){
+        ctx.beginPath();
+        
+       
+        //ctx.clearRect(0,0,500,500);
+        ctx.fillStyle="blue";
+     
+        
+       // ctx.fillRect(boxx,boxy,boxw,boxw);
+       ctx.arc(600,600,50,0,(Math.PI/180)*360,true);
+       ctx.fill();
+       ctx.closePath();
+    }
+      */
+
+
+      
+
+        
+      
+    </script>
+
+    
+</body>
+</html>

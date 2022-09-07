@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="get">
+    <table>
+        <tbody>
+            <tr>
+                <td>user name</td>
+                <td><input autocomplete="off" name="uname" type="text"></td>
+            </tr>
+            <tr>
+                <td>user age</td>
+                <td><input oninput="validateage()" id ="uage" required name="uage" type="number"></td>
+
+            </tr>
+            <tr>
+                <td>&#160;</td>
+                <td><input type="submit" value="register"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+<script>
+    document.getElementById("uage").setCustomValidity("Enter your age");
+    function validateage(){
+        if(document.getElementById("uage").value<18)
+        document.getElementById("uage").setCustomValidity("you are too early");
+        else if(document.getElementById("uage").value>90)
+        document.getElementById("uage").setCustomValidity("you are too old");
+        else
+        document.getElementById("uage").setCustomValidity("");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>currentTime : <output id="op"></output></h1>
+    <audio loop id="audi">
+        <source src="VADEMUSIC.m4a">
+        
+
+    </audieo>
+    <button onclick="playaudi()">Play</button>
+    <button onclick="pauseaudi()">Pause</button>
+    <button onclick="stopaudi()">Stop</button>
+    <button onclick="rewindaudi()">rewind</button>
+    <button onclick="increasevol()">Stop</button>
+    <button onclick="decreasevol()">rewind</button>
+    <script>
+        setInterval(function val(){
+            document.getElementById("op").value=document.getElementById("audi").currentTime;
+        },1)
+        function playaudi(){
+            document.getElementById("audi").play();
+        }
+        function pauseaudi()
+        {
+            document.getElementById("audi").pause();
+
+        }
+        function stopaudi()
+        {    document.getElementById("audi").currentTime=0;
+            document.getElementById("audi").pause();
+           
+        }
+        function rewindaudi()
+        {   
+            document.getElementById("audi").currentTime=document.getElementById("audi").currentTime-1;//-=1
+            document.getElementById("audi").pause();
+        }
+        function decreasevol()
+        {
+            document.getElementById("audi").volume=document.getElementById("audi").volume-0.1;
+        }
+        function increasevol()
+        {
+            document.getElementById("audi").volume=document.getElementById("audi").volume+0.1;
+        }
+
+    </script>
+</body>
+</html>
