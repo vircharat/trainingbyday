@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            border : 2px solid black;
+           
+        }
+    </style>
+</head>
+<body>
+    <canvas width="1100" height="1000" id="can"></canvas>
+    <script>
+    var ctx=document.getElementById("can").getContext("2d");
+    ctx.font="bold 55px arial"
+    ctx.fillStyle="black";
+    ctx.fillText("Valtech_ |",50,70);
+    ctx.font="bold 38px arial"
+    ctx.fillStyle="black";
+    ctx.fillText(" Where Experiences are Engineered ",320,70);
+    
+    ctx.beginPath();
+                
+                ctx.fillStyle="black"
+                ctx.fillRect(35,150,930,150);
+               
+                ctx.font="bold 25px arial"
+                ctx.fillStyle="white";
+                ctx.fillText("Realising Revenue Potential by",320,180);
+                ctx.fillText("Optimizing the Customer Journey and",320,210); 
+                ctx.fillText("Online Experience",320,240);
+                
+                ctx.fillStyle="black"
+                ctx.fillRect(35,350,930,150);
+                ctx.font="bold 25px arial"
+                ctx.fillStyle="white";
+                ctx.fillText("Design Thinking:An Innovation Journey",320,380);
+                ctx.fillText("in 6 Phases",320,410); 
+                
+                
+                ctx.fillStyle="black"
+                ctx.fillRect(35,550,930,150);
+
+                ctx.font="bold 25px arial"
+                ctx.fillStyle="white";
+                ctx.fillText("Diversity & inclusion",320,580);
+                ctx.fillText("Growth and Personal Develoment",320,610); 
+                ctx.fillText("Prioritising a Work Life Balance",320,640);
+                ctx.fillText("International Career Opportunities",320,670);
+                
+                ctx.fillStyle="black"
+                ctx.fillRect(35,750,930,150);
+                
+                ctx.font="bold 25px arial";
+                ctx.fillStyle="white";
+                ctx.fillText("Valtech Values",320,780);
+                
+                ctx.font="bold 18px arial";
+                ctx.fillStyle="white";
+                ctx.fillText(" Share| Dare | Care",320,800); 
+                
+                ctx.font="bold 25px arial";
+                ctx.fillStyle="white";
+                ctx.fillText("Valtech Principles",320,830);
+                
+                ctx.font="bold 18px arial";
+                ctx.fillStyle="white";
+                ctx.fillText("Human centered | Continuously improve | Experiment",320,850);
+
+                ctx.font="bold 18px arial";
+                ctx.fillStyle="white";
+                ctx.fillText("and learn fast | Passion for simplicity | Outcome over",320,870);
+
+                ctx.font="bold 18px arial";
+                ctx.fillStyle="white";
+                ctx.fillText("output | Mind the contract ",320,890);
+                
+                       
+
+        var img1=new Image();
+        img1.src="images/s1.png";
+        img1.onload=function(){
+        ctx.drawImage(img1,45,160);}
+          
+        var img2=new Image();
+        img2.src="images/s2.png";
+        img2.onload=function(){
+        ctx.drawImage(img2,45,360);}
+        
+        var img3=new Image();
+        img3.src="images/s3.png";
+        img3.onload=function(){
+        ctx.drawImage(img3,45,560);}
+          
+        var img4=new Image();
+        img4.src="images/s4.png";
+        img4.onload=function(){
+        ctx.drawImage(img4,45,760);}
+          
+
+    </script>
+
+    
+</body>
+</html>
